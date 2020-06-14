@@ -67,7 +67,7 @@ header ul li a:hover {
 .wrapper section {
   color: white;
   padding: 3rem;
-  background-color: #452d85;
+  background-color: #391f6b;
 }
 
 .wrapper section h1, .wrapper section h2, .wrapper section .read-btn {
@@ -140,11 +140,12 @@ header ul li a:hover {
 .wrapper section.contact button {
   width: 100%;
   background: white;
-  color: #452d85;
+  color: #391f6b;
   font-weight: bold;
   padding: 1rem;
   border: none;
   font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -156,6 +157,9 @@ header ul li a:hover {
   }
   header .logo, header a {
     color: white;
+  }
+  header .logo {
+    font-size: 1.6rem;
   }
 }
 
