@@ -20,6 +20,7 @@ header {
     z-index: 5;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: calc(100% - 1rem);
     background-color: white;
 
@@ -87,6 +88,7 @@ header {
             border: 1px solid gray;
             display: inline-block;
             margin-top: 3rem;
+            max-width: 115px;
         }
 
         .clipper {
@@ -103,6 +105,10 @@ header {
             width: 70%;
             font-size: 1.2rem;
             margin-bottom: 0;
+        }
+
+        h1 {
+            font-size: 2.4rem;
         }
     }
 
@@ -137,5 +143,45 @@ header {
             border: none;
             font-family: 'Poppins', sans-serif;
         }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 17px;
+    }
+    header {
+        background: none;
+
+        .logo, a {
+            color: white;
+        }
+    }
+}
+
+@media only screen and (min-width: 1020px) {
+    .wrapper {
+        grid-template-columns: 65% auto;
+        grid-template-rows: 70% auto;
+        grid-template-areas:
+            "main sidebar"
+            "main contact";
+            height: 100vh;
+    }
+
+    section {
+        display: grid;
+        grid-template-rows: auto;
+        align-items: center;
+    }
+
+    section.main-banner {
+        grid-area: main;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    html {
+        font-size: 21px;
     }
 }
