@@ -1,8 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap");
 body, html {
   margin: 0;
 }
 
 body {
   height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  position: absolute;
+  padding: 0.5rem;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% - 1rem);
+  background-color: white;
+}
+
+header .logo {
+  font-family: 'Delius Unicase', cursive;
+  font-size: 1.4rem;
+  margin-left: 2rem;
+  color: #4e204c;
+}
+
+header a {
+  text-decoration: none;
+  color: #4e204c;
+}
+
+header ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li a {
+  padding: 1rem;
+}
+
+header ul li a:hover {
+  color: grey;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+}
+
+.wrapper section {
+  color: white;
+  padding: 3rem;
+  background-color: #452d85;
+}
+
+.wrapper section h1, .wrapper section h2, .wrapper section .read-btn {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.wrapper section h2 {
+  font-size: 1.4rem;
+}
+
+.wrapper section .read-btn {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.wrapper section .read-btn:hover {
+  color: grey;
+}
+
+.wrapper section .inner-btn {
+  padding: 1.5rem;
+  border: 1px solid gray;
+  display: inline-block;
+  margin-top: 3rem;
+}
+
+.wrapper section .clipper {
+  overflow: hidden;
+}
+
+.wrapper section.main-banner {
+  padding-top: 9rem;
+  background: url("./images/main-bg.jpeg");
+  background-size: cover;
+}
+
+.wrapper section.main-banner p {
+  width: 70%;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.wrapper section.sidebar, .wrapper section.contact {
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+}
+
+.wrapper section.sidebar .read-btn {
+  margin-top: 2rem;
+}
+
+.wrapper section.contact {
+  background-color: #4e204c;
+}
+
+.wrapper section.contact input {
+  width: calc(100% - 2rem);
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1em;
+}
+
+.wrapper section.contact button {
+  width: 100%;
+  background: white;
+  color: #452d85;
+  font-weight: bold;
+  padding: 1rem;
+  border: none;
+  font-family: 'Poppins', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

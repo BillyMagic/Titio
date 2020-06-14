@@ -1,25 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+$primary-color: rgb(69, 45, 133);
+$secondary-color: #4e204c;
+
+
 body, html {
     margin: 0;
 }
 
 body {
     height: 100%;
+    font-family: 'Poppins', sans-serif;
     //display: none;
 }
 
-// * {
-//     border: 1px solid red;
-// }
+header {
+    position: absolute;
+    padding: 0.5rem;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 1rem);
+    background-color: white;
 
-// .header {
-//     margin: 10px;
-//     height: 130px;
-//     background-image: url("./images/logo.png");
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//     display: flex;
-//     align-items: center;
-//     justify-content: flex-end;
-// }
+    .logo {
+        font-family: 'Delius Unicase', cursive;
+        font-size: 1.4rem;
+        margin-left: 2rem;
+        color: $secondary-color
+    }
 
+    a {
+    text-decoration: none;
+    color: $secondary-color;
+    }
 
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        
+        li a {
+            padding: 1rem;
+        }
+
+        li a:hover {
+            color: grey;
+        }
+    }
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto;
+
+    section {
+        color: white;
+        padding: 3rem;
+        background-color: $primary-color;
+
+        h1, h2, .read-btn {
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+        }
+
+        .read-btn {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .read-btn:hover {
+            color: grey;
+        }
+
+        .inner-btn {
+            padding: 1.5rem;
+            border: 1px solid gray;
+            display: inline-block;
+            margin-top: 3rem;
+        }
+
+        .clipper {
+            overflow: hidden;
+        }
+    }
+
+    section.main-banner {
+        padding-top: 9rem;
+        background: url("./images/main-bg.jpeg");
+        background-size: cover;
+
+        p {
+            width: 70%;
+            font-size: 1.2rem;
+            margin-bottom: 0;
+        }
+    }
+
+    section.sidebar, section.contact {
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+    }
+
+    section.sidebar {
+        
+        .read-btn {
+            margin-top: 2rem;
+        }
+    }
+
+    section.contact {
+        background-color: $secondary-color;
+
+        input {
+            width: calc(100% - 2rem);
+            padding: 1rem;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 1em;
+        }
+
+        button {
+            width: 100%;
+            background: white;
+            color: $primary-color;
+            font-weight: bold;
+            padding: 1rem;
+            border: none;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+}
