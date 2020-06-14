@@ -1,1 +1,8 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body, html {
+  margin: 0;
+}
+
+body {
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */
